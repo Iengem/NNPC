@@ -16,6 +16,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'ne-med';
+    text-decoration: none;
 }
 ::-webkit-scrollbar{
     width: 0;
@@ -24,6 +25,8 @@ nav{
     display: flex;
     align-items: center;
     height: 13vh;
+    position: sticky;
+    top: 0;
     justify-content: center;
     background-color: white;
     z-index: 100;
@@ -165,6 +168,8 @@ nav img{
     height: 40vh;
 }
 .bsec1,.bsec2{
+    position: relative;
+    top: 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,7 +211,279 @@ nav img{
     line-height: 28px;
 }
 .mid{
-    background-image: url(images/);
-    position: absolute;
-    inset: 0;
+    background-image: url(images/44.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88vh;
+    z-index: 20;
+}
+.crude_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: flex-end;
+    gap: 30px;
+}
+.crude_card{
+    width: 100%;
+    background-color: white;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+}
+.crude_card p{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: rgb(0,0,0,0.25);
+}
+.post p{
+    font-size: 12px;
+    color: rgb(29,103,49);
+}
+.post span{
+    font-size: 45px;
+}
+.post{
+    display: flex;
+    align-items: center;
+    gap: 50%;
+}
+.crude_card h2{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'ne-reg';
+}
+.crudeoil{
+    display: flex;
+    width: 100%;
+    height:60vh;
+    gap: 30px;
+}
+.crude-img{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.rep{
+    display: flex;
+    align-items: center;
+    gap: 34%;
+    border-bottom: 2px solid black;
+}
+.rep p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(0,0,0,0.25);
+}
+.crude-img a{
+    background-color: rgb(249,231,69);
+    padding: 20px 30px;
+    color: rgb(0,1,0);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.crude-img img{
+    width: 496px;
+    height:100%;
+    object-fit: cover;
+}
+.bmidsec{
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.miss{
+    font-size: 30px;
+    line-height: 102px;
+    font-weight: 400;
+    font-family: 'ne-reg';
+    border-bottom: 2px solid black;
+}
+.crude_card:nth-child(1):hover{
+    gap: 0px;
+    background-image: url(images/nnpc_acquire_ovh_00_2e2943be88.jpg);
+    background-position: center;
+    background-color: rgb(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    transition: .5s;
+}
+.crude_card:nth-child(2):hover,.crude_card:nth-child(3):hover{
+    gap: 0px;
+    background-image: url(images/nnpc_does_not_operate_secret_account_6f8219544b.jpeg);
+    background-position: center;
+    background-color: rgb(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    transition: .5s;
+}
+.crude_card:nth-child(4):hover{
+    gap: 0px;
+    background-image: url(images/nigeria_morocco_gas_pipeline_01_a49e3572a3.jpeg);
+    background-position: center;
+    background-color: rgb(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    transition: .5s;
+}
+.contracts .contact p{
+    background-color: rgb(3,20,27);
+    color: rgb(194,230,54);
+    padding: 24px;
+}
+.contracts .contact{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.contracts .contact span{
+    background-color: rgb(3,20,27);
+    padding: 20px;
+}
+.contracts h2{
+    font-size: 27px;
+    font-family: 'ne-reg';
+    font-weight: 100;
+}
+.contracts{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+.contracts img{
+    padding-top: 100px;
+}
+.nnpclogo{
+    display: flex;
+    gap: 10px;
+}
+.nnpclogo img{
+    width: 60px;
+    height: 40px;
+}
+.nnpc_text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+}
+footer{
+    background-color: rgb(3,20,27);
+    height: 85vh;
+    display: flex;
+}
+.natgas{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.natgas span{
+    color: white;
+}
+.footersec1 h4{
+    color: rgb(229,231,232);
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 13px;
+}
+.footersec1{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 25%;
+    border-right: 1px solid rgb(56, 56, 56);
+}
+.footersec2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.footergrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100%;
+}
+.footer-grid-card{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    border-right: 1px solid rgb(56, 56, 56);
+    padding: 30px;
+}
+.footer-grid-card h2{
+    color: rgb(249,231,69);
+    border-bottom: 1px solid rgb(56, 56, 56);
+    font-weight: 100;
+    padding-bottom: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.footer-grid-card p{
+    color: white;
+    font-size: 15px;
+}
+.topfootersec{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    align-items: center;
+    height: 20vh;
+    gap: 20%;
+}
+.inputbar{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+    width: 40%;
+    gap: 50%;
+}
+.inputbar span{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.inputbar input{
+    background-color: rgb(3,20,27);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'ne-reg';
+    color: white;
+}
+.inputbar input::placeholder{
+    color: white;
+}
+.topfootersec p{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: 'ne-reg';
+    color: white;
+}
+.social{
+    display: flex;
+    gap: 20px;
+}
+.social img{
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
