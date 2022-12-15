@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'ne-reg';
+    src: url(images/NeueMontreal-Regular.otf);
+}
+@font-face {
+    font-family: 'ne-med';
+    src: url(images/NeueMontreal-Medium.otf);
+}
+@font-face {
+    font-family: 'ne-bold';
+    src: url(images/NeueMontreal-Bold.otf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'ne-med';
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 13vh;
+    justify-content: center;
+    background-color: white;
+    z-index: 100;
+}
+nav img{
+    width: 100px;
+}
+.navlist{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+}
+.navlist a{
+    text-decoration: none;
+    color: rgb(0,1,0);
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.contact p{
+    background-color: rgb(0,64,16);
+    color: white;
+    font-size: 14px;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+}
+.contact span{
+    background-color: rgb(0,64,16);
+    color: white;
+    padding: 11.5px 20px;
+}
+.hero{
+    height: 87vh;
+    background-image: url(images/heroimg.jpeg);
+    background-size: cover;
+    background-color: rgb(0,0,0,0.5);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+    gap: 30px;
+}
+.hero a{
+    text-decoration: none;
+}
+.hero .contact p{
+    background-color: white;
+    color: rgb(0,1,0);
+    padding: 25px 30px;
+}
+.firstsec{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.firstsec h2{
+    font-size: 54px;
+    line-height: 66px;
+    font-family: 'ne-bold';
+    font-family: 700;
+    color: white;
+}
+.firstsec p{
+    width: 460px;
+    font-size: 22px;
+    line-height: 34px;
+    font-family: 'ne-reg';
+    color: white;
+}
+.hero .contact span{
+    color: rgb(0,1,0);
+    background-color: white;
+    padding: 21.5px;
+}
+.arrows{
+    display: flex;
+    gap: 10px;
+}
+.arrows span{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(249,231,69);
+}
+.green{
+    color: rgb(29,103,49);
+    font-family: 'ne-bold';
+}
+.bhero{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+.bherosec{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    padding-left: 10%;
+}
+.bherosec img{
+    border-right: 1px solid rgb(229,231,232);
+    width: 20%;
+}
+.founded{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.founded p{
+    font-size: 14px;
+    color: rgba(2,20,37,0.32);
+    line-height: 16.8px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.founded h2{
+    font-size: 50px;
+    width: 70%;
+    font-weight: 700;
+    font-family: 'ne-bold';
+    line-height: 60px;
+}
+.bsec1,.bsec2{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 30%;
+}
+.bherosec2{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+.bsec1,.bsec2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bsec1 img{
+    width: 117px;
+    height: 55px;
+    border-left: 1px solid rgb(229,231,232);
+    border-right: 1px solid rgb(229,231,232);
+    padding: 0px 40px;
+}
+.bsec2 img{
+    width: 117px;
+    height: 55px;
+    border-left: 1px solid rgb(229,231,232);
+    border-right: 1px solid rgb(229,231,232);
+    padding: 0px 30px;
+}
+.num{
+    display: flex;
+    align-items: flex-start;
+}
+.num p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.num h1{
+    font-family: 'ne-med';
+    font-size: 65px;
+    line-height: 78px;
+    font-weight: 500;
+}
+.bsec1 p,.bsec2 p{
+    font-family: 'ne-reg';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.mid{
+    background-image: url(images/);
+    position: absolute;
+    inset: 0;
+}
