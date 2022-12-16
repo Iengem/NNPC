@@ -22,6 +22,7 @@
     width: 0;
 }
 nav{
+    width: 100%;
     display: flex;
     align-items: center;
     height: 13vh;
@@ -41,7 +42,7 @@ nav img{
     gap: 30px;
     align-items: center;
 }
-.navlist a{
+.navlist a,.navlist1 a{
     text-decoration: none;
     color: rgb(0,1,0);
 }
@@ -50,6 +51,11 @@ nav img{
     align-items: center;
     gap: 1px;
 }
+.contact span{
+    background-color: rgb(0,64,16);
+    color: white;
+    padding: 11.5px 20px;
+}
 .contact p{
     background-color: rgb(0,64,16);
     color: white;
@@ -57,12 +63,8 @@ nav img{
     padding: 15px 40px;
     letter-spacing: 1px;
 }
-.contact span{
-    background-color: rgb(0,64,16);
-    color: white;
-    padding: 11.5px 20px;
-}
 .hero{
+    width: 100%;
     height: 87vh;
     background-image: url(images/heroimg.jpeg);
     background-size: cover;
@@ -159,13 +161,13 @@ nav img{
 }
 .bsec1,.bsec2{
     border: 1px solid black;
-    border-collapse: collapse;
-    width: 30%;
+    width: 40%;
 }
 .bherosec2{
     display: flex;
     justify-content: center;
     height: 40vh;
+    position: relative;
 }
 .bsec1,.bsec2{
     position: relative;
@@ -218,6 +220,7 @@ nav img{
     z-index: 20;
 }
 .crude_grid{
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content: flex-end;
@@ -226,7 +229,7 @@ nav img{
 .crude_card{
     width: 100%;
     background-color: white;
-    gap: 30px;
+    gap: 2em;
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid black;
@@ -289,7 +292,7 @@ nav img{
     font-weight: 500;
 }
 .crude-img img{
-    width: 496px;
+    width: 100%;
     height:100%;
     object-fit: cover;
 }
@@ -359,6 +362,7 @@ nav img{
 }
 .contracts img{
     padding-top: 100px;
+    display: none;
 }
 .nnpclogo{
     display: flex;
@@ -374,10 +378,29 @@ nav img{
     color: white;
     font-size: 15px;
 }
+.navlist1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 30;
+    justify-content: center;
+    transition: .5s;
+    gap: 10%;
+    background-color: white;
+    height: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+}
 footer{
     background-color: rgb(3,20,27);
     height: 85vh;
     display: flex;
+    width: 100%;
 }
 .natgas{
     display: flex;
@@ -441,6 +464,28 @@ footer{
     height: 20vh;
     gap: 20%;
 }
+.navlist1 a{
+    font-family: 'ne-med';
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.navlist1 .contact{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.navlist1 .contact p{
+    background-color: rgb(0,64,16);
+    color: white;
+    font-size: 14px;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+}
+.navlist1 .contact span{
+    background-color: rgb(0,64,16);
+    color: white;
+    padding: 11.5px 20px;
+}
 .inputbar{
     display: flex;
     padding-bottom: 20px;
@@ -486,4 +531,144 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+@media only screen and (max-width:1200px){
+    footer{
+        flex-direction: column;
+        height: max-content;
+    }
+    .footersec1{
+        gap: 20px;
+    }
+    .natgas img{
+        width: 50%;
+    }
+    .footersec2{
+        border-top: 1px solid rgb(56, 56, 56);
+    }
+    .footersec1 h4{
+        display: none;
+    }
+    .topfootersec{
+        gap: 10%;
+    }
+}
+@media only screen and (max-width:1000px){
+    .navlist{
+        gap: 15px;
+        width: 89%;
+    }
+    .navlist a{
+        font-size: 14px;
+    }
+    .firstsec{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .firstsec h2{
+        font-size: 40px;
+    }
+    .firstsec p{
+        font-size: 22px;
+        width: 100%;
+    }
+    .founded h2{
+        font-size: 40px;
+    }
+    .navlist .contact p{
+        padding: 15px 20px;
+    }
+    .navlist .contact span{
+        padding: 11.5px 20px;
+    }
+    .crude_card h2{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:868px){
+    .crudeoil{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .navlist a{
+        display: none;
+    }
+    .navlist{
+        width: 80%;
+    }
+    .bherosec{
+        display: flex;
+        flex-direction: column;
+    }
+    .bherosec img{
+        border-right: none;
+    }
+    .founded h2{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+        font-size: 43px;
+    }
+    .topfootersec{
+        gap: 5%;
+    }
+    .crude-img,.crude_grid{
+        width: 100%;
+    }
+    .footergrid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (max-width:740px){
+    .bherosec2{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        padding: 0px 30px;
+    }
+    .bsec1,.bsec2{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:540px){
+    .founded h2{
+        font-size: 30px;
+        font-family: 'ne-med';
+        letter-spacing: 0.2px;
+    }
+    .founded span{
+        font-size: 30px;
+        font-family: 'ne-med';
+        letter-spacing: 0.2px;
+    }
+    .upto{
+        font-size: 25px !important;
+    }
+    .miss{
+        font-size: 25px;
+    }
+    .topfootersec{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        gap: 30px;
+    }
+    .crude_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contracts .contact{
+        justify-content: center;
+    }
+    .contracts h2{
+        display: none;
+    }
+    .contracts .invest{
+        display: block;
+    }
 }
