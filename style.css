@@ -219,6 +219,41 @@ nav img{
     height: 88vh;
     z-index: 20;
 }
+.contracts .invest{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 50vh;
+    display: none;
+}
+.contracts .invest h2{
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    font-family: 'ne-reg';
+}
+.invest img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+.topinvest{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    justify-content: center;
+    height: 50%;
+    background-color: rgb(242,243,243);
+    gap: 30px;
+    align-items: flex-start;
+}
+.topinvest h2{
+    font-size: 16px;
+}
+.topinvest p{
+    font-size: 25px;
+}
 .crude_grid{
     width: 70%;
     display: grid;
@@ -266,6 +301,7 @@ nav img{
 }
 .crude-img{
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -358,11 +394,12 @@ nav img{
 .contracts{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     padding: 30px 30px;
 }
-.contracts img{
+.firstimg{
     padding-top: 100px;
-    display: none;
+    display: block;
 }
 .nnpclogo{
     display: flex;
@@ -662,13 +699,19 @@ footer{
     .crude_grid{
         grid-template-columns: repeat(1, 1fr);
     }
+    .crude-img{
+        height: 320px;
+    }
     .contracts .contact{
         justify-content: center;
     }
-    .contracts h2{
+    .lim{
         display: none;
     }
     .contracts .invest{
-        display: block;
+        display: flex;
+    }
+    .contracts .firstimg{
+        display: none;
     }
 }
